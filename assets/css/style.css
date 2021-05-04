@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Quicksand';
+}
+body ::selection{
+    background-color:#52CCDE ;
+}
+a{
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Poppins';
+}
+body > main{
+    margin: 10vh 10vw;
+    /* border: .5px solid gray; */
+}
+body > main > header > img.logo{
+    height:3vh;
+    display: inline-block;
+    transition: ease-in-out 1s;
+}
+body > main > main.main1{
+    display: flex;
+}
+body > main > header{
+    font-family: 'Lobster';
+    font-size: 30px;
+    /* border: .5px solid gray; */
+    padding-bottom: 5vh;
+    transition: ease-out 1s;
+}
+
+body > main > main.main1 > div.div1 > div.texts > h1{
+    padding: 5vh 0;
+    font-family: 'Poppins';
+    animation: up 1s 1;
+}
+body > main > main.main1 > div.div1 > div.texts > img.img1{
+    display: none;
+}
+body > main > main.main1 > div.div1 > div.texts > div.text {
+    padding-bottom: 5vh;
+    line-height: 30px;
+    transition: .1s;
+    font-family: 'Quicksand';
+    font-weight: lighter;
+    font-size: 20px;
+    animation: up 1.5s 1;
+}
+body > main > main.main1 > div.div1 >div.texts > div.under-btn{
+    font-family: 'Quicksand';
+    padding: 2.5vh 0;
+    animation: up 2s 1;
+}
+body > main > main.main1 > div.div1 >div.texts > div.button > button.button{
+    padding: 2.5vh 2.5vw;
+    background: linear-gradient(285.12deg, #136AB9 8.76%, #52CCDE 133.39%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 5px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    animation: up 1.8s 1;
+}
+body > main > main.main1 > div.div1 >div.texts > div.button > button.button:hover{
+    border-radius: 30px;
+}
+body > main > main.main1 > div.div2 > img.img {
+    height:65vh;
+    /* border: .5px solid red; */
+    padding-left: 5vw;
+    margin-right: 2vw;
+    animation: up 2s 1;
+}
+@keyframes up {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+    }
+  }
+/* ============================== phone view here============================== */
+  @media only screen and (max-width:600px){
+
+    body > main{
+        margin: 10vh 10vw;
+        /* border: .5px solid gray; */
+    }
+    body > main > main.main1{
+        display: inline;
+    }
+    body > main > header > img.logo{
+        height:2vh;
+        text-align: center;
+        margin: auto auto;
+    }
+    body > main > header{
+        font-family: 'Lobster';
+        font-size: 18px;
+        /* border: .5px solid gray; */
+        padding-bottom: 5vh;
+        transition: ease-out 1s;
+    }
+    body > main > main.main1 > div.div1 > div.texts{
+        text-align: center;
+    }
+    
+    body > main > main.main1 > div.div1 > div.texts > h1{
+        padding: 2.5vh  0 0 0;
+        font-family: 'Poppins';
+        animation: up 1s 1;
+    }
+    body > main > main.main1 > div.div1 > div.texts > img.img1{
+        display: inline;
+        height:45vh;
+        animation: up .9s 1;
+    }
+    body > main > main.main1 > div.div1 >div.texts > div.button > button.button{
+        padding: 2.5vh 5vw;
+    }
+    body > main > main.main1 > div.div1 >div.texts > div.under-btn{
+        font-size: 13px;
+    }
+    body > main > main.main1 > div.div2 > img.img {
+       display: none;
+    }
+
+  }
